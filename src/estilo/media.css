@@ -1,0 +1,66 @@
+@media screen and (min-width: 550px) {
+    .populares__container{
+        grid-template-columns: 520px;
+    }
+
+    .card__populares{
+        height: 25rem;
+    }
+}
+
+@media screen and (min-width: 751px) {
+    .categoria__container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .delivery{
+        flex-flow: row;
+        gap: 2rem;
+    }
+    
+    .delivery__texto{
+        text-align: start;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .categoria__container{
+        grid-template-columns: repeat(3, .3fr); 
+    }
+
+    .populares__container{
+        grid-template-columns: repeat(2, 400px)
+    }
+
+    .delivery{
+        padding: 3rem;
+    }
+
+    .delivery i{
+        font-size: 7rem;
+    }
+
+    .delivery__texto h3{
+        font-size: 3rem;
+    }
+
+    .delivery__texto p{
+        font-size: 1.5rem;
+        text-transform: capitalize;
+    }
+}
+
+
+@media screen and (min-width: 1300px) {
+    .card__categoria{
+        border-radius: 50%;
+        width: 25rem; height: 25rem;
+        margin: 0 auto;
+    }
+
+    .populares__container{
+        grid-template-columns: repeat(3, .32fr)
+    }
+
+
+}
