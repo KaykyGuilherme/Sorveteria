@@ -7,6 +7,11 @@
     transition: .5s;
 }
 
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 180px;
+}
+
 body{
     background: #eee;
     height: 100vh;
@@ -238,7 +243,7 @@ header{
     box-shadow: 0 0 .6rem var(--cor__4);
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1050px) {
     .menu__mobile{
         cursor: pointer;
         position: absolute;
@@ -285,7 +290,7 @@ header{
 
     .active .nav__list{
         top: 13rem;
-        height: 20rem;
+        height: 25rem;
         padding: 4rem;
     }
 
