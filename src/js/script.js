@@ -22,3 +22,19 @@ card__quem__somosALL.forEach((elemento) =>{
         elemento.classList.toggle("flip__quem__somos")
     })
 })
+
+// ==================
+
+const oberservandoALL = document.querySelectorAll(".oberservando")
+
+const oberservador = new IntersectionObserver((elemento) =>{
+    elemento.forEach((separador) =>{
+       if(separador.isIntersecting){
+        separador.target.classList.add("visto")
+       }
+    })
+})
+
+oberservandoALL.forEach((separador) =>{
+    oberservador.observe(separador)
+})

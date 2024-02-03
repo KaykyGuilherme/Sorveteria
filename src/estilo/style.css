@@ -4,6 +4,7 @@
     margin: 0; padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    transition: .5s;
 }
 
 body{
@@ -587,8 +588,6 @@ header{
     transform-style: preserve-3d;
     transition: .4s;
     cursor: pointer;
-    
-
 }
 
 .flip__quem__somos{
@@ -671,4 +670,14 @@ footer p{
     text-align: center;
     color: var(--cor__1);
     text-transform: capitalize;
+}
+
+.oberservando{
+    filter: blur(10rem);
+    transform: translateX(-1005);
+}
+
+.visto{
+    transform: translateX(0);
+    filter: blur(0);
 }
